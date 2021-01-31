@@ -6,8 +6,8 @@ const NavBar = () => {
 
     return (
         <div className={navStyle}>
-            <Link />
-            <Link />
+            <Link to="/">Home from Nav</Link>
+            <Link to="/">Home from Nav</Link>
         </div>
     )
 }

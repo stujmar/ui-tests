@@ -11,8 +11,8 @@ const App = () => {
       <p>Hello World</p>
       <Router>
           <NavBar />
-          <Link />
-          <Link />
+          <Link to="/">Home From App</Link>
+          <Link to="/">Home From App</Link>
         <Switch>
           <Route path="/" component={Home} exact/>
           <Route path="/radio"/>
