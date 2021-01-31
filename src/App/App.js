@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import Home from '../Home/Home';
+import NavBar from '../NavBar/NavBar';
 import { main } from './App.module.css';
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <div className={main}>
       <p>Hello World</p>
       <Router>
+          <NavBar />
           <Link />
           <Link />
         <Switch>
