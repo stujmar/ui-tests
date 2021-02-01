@@ -1,10 +1,12 @@
 import React from 'react';
-import { headStyle } from './Header.module.css';
+import { headBody, headText } from './Header.module.css';
 
 const Header = () => {
 
     return (
-        <div className={headStyle}>This is the Header</div>
+        <div className={headBody}>
+            <div className={headText}>UI TESTS</div>
+        </div>
     )
 }
 
