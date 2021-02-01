@@ -2,4 +2,6 @@
   background:cornflowerblue;
 }
 
-
+.flexBody {
+  display: flex;
+}

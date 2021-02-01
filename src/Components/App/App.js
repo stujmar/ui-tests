@@ -5,24 +5,22 @@ import Home from '../Home/Home';
 import Calendar from '../Calendar/Calendar';
 import NavBar from '../NavBar/NavBar';
 import Radio from '../Radio/Radio';
-import { main } from './App.module.css';
+import { main, flexBody } from './App.module.css';
 import Header from '../Header/Header';
 
 const App = () => {
   return (
     <div className={main}>
       <Header />
-      <p>Hello World</p>
-      <button>within react but outside of Router</button>
       <Router>
+        <div className={flexBody}>
           <NavBar />
-
-
-        <Switch>
-          <Route path="/" component={Home} exact/>
-          <Route path="/calendar" component={Calendar} exact/>
-          <Route path="/radio" component={Radio} />
-        </Switch>  
+          <Switch>
+            <Route path="/" component={Home} exact/>
+            <Route path="/calendar" component={Calendar} exact/>
+            <Route path="/radio" component={Radio} />
+          </Switch>  
+        </div>
       </Router>
     </div>
   )

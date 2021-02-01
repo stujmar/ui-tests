@@ -10,7 +10,6 @@ const NavBar = () => {
     }
     return (
         <div className={navStyle}>
-            <button onClick={handleClick}>Radio Cheat</button>
             <Link to="/">Home from Nav</Link>
             <Link to="/radio">Radio from Nav</Link>
             <Link to="/calendar">Calendar from Nav</Link>
