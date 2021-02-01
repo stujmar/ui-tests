@@ -3,10 +3,11 @@
     height: 100px;
     background: white;
     border-bottom: 1px solid black;
-    padding:20px;
+    padding: 25px;
 }
 
 .headText {
     font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
