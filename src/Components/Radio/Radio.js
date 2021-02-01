@@ -1,9 +1,11 @@
 import React from "react"
 import {body} from './Radio.module.css'
 
-const Radio = () => {
+const Radio = ({match}) => {
     return (
-        <div className={body} >Radio</div>
+        <div className={body} >Radio
+            <p>{match.path}</p>
+        </div>
     )
 }
 

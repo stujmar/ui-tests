@@ -12,4 +12,5 @@ const Calendar = () => {
     )
 }
 
+// Window history in a route is mutable. So it history.location
 export default Calendar 
