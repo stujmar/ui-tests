@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Modules Used
+
+npm install react-router-dom
+npm install react-time-picker
+
 ## Available Scripts
 
 In the project directory, you can run:
