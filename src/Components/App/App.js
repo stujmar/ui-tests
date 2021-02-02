@@ -7,6 +7,10 @@ import NavBar from '../NavBar/NavBar';
 import Radio from '../Radio/Radio';
 import { main, flexBody } from './App.module.css';
 import Header from '../Header/Header';
+import Color from '../Color/Color';
+import TextEdit from '../TextEdit/TextEdit';
+import Time from '../Time/Time';
+import Date from '../Date/Date';
 
 const App = () => {
   return (
@@ -17,8 +21,12 @@ const App = () => {
           <NavBar />
           <Switch>
             <Route path="/" component={Home} exact/>
-            <Route path="/calendar" component={Calendar} exact/>
+            <Route path="/color" component={Color}/>
+            <Route path="/calendar" component={Calendar}/>
+            <Route path="/date" component={Date}/>
             <Route path="/radio" component={Radio} />
+            <Route path="/text" component={TextEdit}/>
+            <Route path="/time" component={Time}/>
           </Switch>  
         </div>
       </Router>

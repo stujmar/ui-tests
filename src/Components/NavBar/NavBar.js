@@ -10,9 +10,13 @@ const NavBar = () => {
     }
     return (
         <div className={navStyle}>
-            <Link to="/">Home from Nav</Link>
-            <Link to="/radio">Radio from Nav</Link>
-            <Link to="/calendar">Calendar from Nav</Link>
+            <Link to="/">Home</Link>
+            <Link to="/calendar">Calendar</Link>
+            <Link to="/color">Color</Link>
+            <Link to="/date">Date</Link>
+            <Link to="/radio">Radio</Link>
+            <Link to="/text">Text</Link>
+            <Link to="/time">Time</Link>
         </div>
     )
 }
