@@ -1,22 +1,19 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
-import { navStyle } from './NavBar.module.css'
+import { Link, useLocation } from "react-router-dom";
+import { active, navStyle, linkStyle } from './NavBar.module.css'
 
 const NavBar = () => {
-    const history = useHistory();
+    const location = useLocation();
 
-    const handleClick = (e) => {
-        history.push("radio");
-    }
     return (
         <div className={navStyle}>
-            <Link to="/">Home</Link>
-            <Link to="/calendar">Calendar</Link>
-            <Link to="/color">Color</Link>
-            <Link to="/date">Date</Link>
-            <Link to="/radio">Radio</Link>
-            <Link to="/text">Text</Link>
-            <Link to="/time">Time</Link>
+            <Link className={linkStyle} to="/">Home</Link>
+            <Link className={location.pathname === "/calendar" ? `${active} ${linkStyle}` : linkStyle} to="/calendar">Calendar</Link>
+            <Link className={location.pathname === "/color" ? `${active} ${linkStyle}` : linkStyle} to="/color">Color</Link>
+            <Link className={location.pathname === "/date" ? `${active} ${linkStyle}` : linkStyle} to="/date">Date</Link>
+            <Link className={location.pathname === "/radio" ? `${active} ${linkStyle}` : linkStyle} to="/radio">Radio</Link>
+            <Link className={location.pathname === "/text" ? `${active} ${linkStyle}` : linkStyle} to="/text">Text</Link>
+            <Link className={location.pathname === "/time" ? `${active} ${linkStyle}` : linkStyle} to="/time">Time</Link>
         </div>
     )
 }

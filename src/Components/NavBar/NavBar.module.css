@@ -1,5 +1,32 @@
 .navStyle {
-    background: rgb(187, 187, 187);
     display: flex;
     flex-direction: column;
+    width: 150px;
 }
+
+.linkStyle {
+    background: white;
+    padding-top: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 50px;
+    text-align: center;
+    font-weight: 700;
+    border-right: 1px solid gray;
+    border-bottom: gray 1px solid;
+}
+
+.linkStyle:hover, .active {
+    background: rgb(187, 187, 187);
+}
+
+.linkStyle:link, .linkStyle:visited, .linkStyle:active {
+    color:black;
+  }
+  
+
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
