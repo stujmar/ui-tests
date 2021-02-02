@@ -1,10 +1,11 @@
 import React from "react"
-import {body} from './Color.module.css'
+import { head, body } from '../Universal.module.css'
+import styles from './Color.module.css'
 
 const Color = () => {
     return (
         <div className={body}>
-            <h2>
+            <h2 className={head}>
                 Color
             </h2>
         </div>

@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 //Look into this Prompt component later
 import {Prompt} from 'react-router-dom';
-import { body } from './Calendar.module.css'
+import { head, body } from '../Universal.module.css'
+import styles from './Calendar.module.css'
 
 const Calendar = () => {
     const [name, setName] = useState("");
     
     return (
         <div className={body}>
-        <h2>
+        <h2 className={head}>
             Calendar
         </h2>
         </div>

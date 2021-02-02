@@ -1,10 +1,11 @@
 import React from "react"
-import {body} from './TextEdit.module.css'
+import { head, body } from '../Universal.module.css'
+import styles from './TextEdit.module.css'
 
 const TextEdit = () => {
     return (
         <div className={body} >
-            <h2>Text</h2>
+            <h2 className={head}>Text</h2>
         </div>
     )
 }

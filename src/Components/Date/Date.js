@@ -1,10 +1,11 @@
 import React from "react"
-import {body} from './Date.module.css'
+import { head, body } from '../Universal.module.css'
+import styles from './Date.module.css'
 
 const Date = () => {
     return (
         <div className={body}>
-           <h2>
+           <h2 className={head}>
                 Date
            </h2>
         </div>

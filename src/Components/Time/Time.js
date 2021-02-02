@@ -1,10 +1,11 @@
 import React from "react"
-import {body} from './Time.module.css'
+import { head, body } from '../Universal.module.css'
+import styles from './Time.module.css'
 
 const Time = () => {
     return (
         <div className={body}>
-            <h2>Time</h2>
+            <h2 className={head}>Time</h2>
         </div>
     )
 }
