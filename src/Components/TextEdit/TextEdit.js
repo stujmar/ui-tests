@@ -4,7 +4,7 @@ import {body} from './TextEdit.module.css'
 const TextEdit = () => {
     return (
         <div className={body} >
-            TextEdit
+            <h2>Text</h2>
         </div>
     )
 }

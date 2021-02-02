@@ -3,8 +3,8 @@ import {body} from './Time.module.css'
 
 const Time = () => {
     return (
-        <div className={body} >
-            Time
+        <div className={body}>
+            <h2>Time</h2>
         </div>
     )
 }

@@ -1,9 +1,12 @@
 import React from "react"
+import {body} from './Home.module.css'
 
 const Home = () => {
 
     return (
-        <h1>Home</h1>
+        <div className={body}>
+            <h2>Home</h2>
+        </div>
     )
 }
 

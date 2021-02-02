@@ -4,7 +4,9 @@ import {body} from './Color.module.css'
 const Color = () => {
     return (
         <div className={body}>
-            Color
+            <h2>
+                Color
+            </h2>
         </div>
     )
 }

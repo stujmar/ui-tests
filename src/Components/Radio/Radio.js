@@ -3,7 +3,10 @@ import {body} from './Radio.module.css'
 
 const Radio = () => {
     return (
-        <div className={body} >Radio
+        <div className={body} >
+            <h2>    
+                Radio
+            </h2>
         </div>
     )
 }

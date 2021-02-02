@@ -4,7 +4,9 @@ import {body} from './Date.module.css'
 const Date = () => {
     return (
         <div className={body}>
-            Date
+           <h2>
+                Date
+           </h2>
         </div>
     )
 }
