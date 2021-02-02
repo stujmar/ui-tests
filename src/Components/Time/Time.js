@@ -9,7 +9,7 @@ const Time = () => {
         <div className={body}>
             <h2 className={head}>Time</h2>
             <TimePicker
-                clockIcon={null}
+                disableClock={true}
                 onChange={onChange}
                 value={value}
             />
