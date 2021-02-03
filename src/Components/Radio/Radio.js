@@ -5,7 +5,12 @@ import styles from './Radio.module.css'
 
 const Radio = () => {
 
-    const [option, setOption] = useState('option1');
+    const [option, setOption] = useState('');
+
+    const handleOptionChange = (e) => {
+        console.log(e.target.value);
+    }
+
 
     return (
         <div className={body} >
