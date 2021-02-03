@@ -8,9 +8,8 @@ const Radio = () => {
     const [option, setOption] = useState('');
 
     const handleOptionChange = (e) => {
-        console.log(e.target.value);
+        setOption(e.target.value);
     }
-
 
     return (
         <div className={body} >
