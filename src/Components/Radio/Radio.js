@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { head, body } from '../Universal.module.css'
 
 import styles from './Radio.module.css'
 
 const Radio = () => {
 
+    const [option, setOption] = useState('option1');
+    
     return (
         <div className={body} >
             <h2 className={head}>    
