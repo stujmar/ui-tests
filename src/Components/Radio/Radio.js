@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { head, body } from '../Universal.module.css'
-
-import styles from './Radio.module.css'
+import { submit } from './Radio.module.css'
 
 const Radio = () => {
 
@@ -27,7 +26,7 @@ const Radio = () => {
                         onChange={handleOptionChange}
                         className="form-check-input"
                     />
-                    Option 1
+                     {`  Option 1`}
                     </label>
                 </div>
                 <div className="form-check">
@@ -40,7 +39,7 @@ const Radio = () => {
                         onChange={handleOptionChange}
                         className="form-check-input"
                     />
-                    Option 2
+                    {`  Option 2`}
                     </label>
                 </div>
                 <div className="form-check">
@@ -53,11 +52,11 @@ const Radio = () => {
                         onChange={handleOptionChange}
                         className="form-check-input"
                     />
-                    Option 3
+                    {`  Option 3`}
                     </label>
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-primary mt-2" type="submit">
+                    <button className={submit} type="submit">
                     Submit
                     </button>
                 </div>
