@@ -6,7 +6,7 @@ import styles from './Radio.module.css'
 const Radio = () => {
 
     const [option, setOption] = useState('option1');
-    
+
     return (
         <div className={body} >
             <h2 className={head}>    
@@ -19,7 +19,7 @@ const Radio = () => {
                         type="radio"
                         name="react-tips"
                         value="option1"
-                        checked={true}
+                        checked={option === 'option1'}
                         className="form-check-input"
                     />
                     Option 1
@@ -31,6 +31,7 @@ const Radio = () => {
                         type="radio"
                         name="react-tips"
                         value="option2"
+                        checked={option === 'option2'}
                         className="form-check-input"
                     />
                     Option 2
@@ -42,6 +43,7 @@ const Radio = () => {
                         type="radio"
                         name="react-tips"
                         value="option3"
+                        checked={option === 'option3'}
                         className="form-check-input"
                     />
                     Option 3
