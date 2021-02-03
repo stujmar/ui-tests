@@ -20,6 +20,7 @@ const Radio = () => {
                         name="react-tips"
                         value="option1"
                         checked={option === 'option1'}
+                        onChange={handleOptionChange}
                         className="form-check-input"
                     />
                     Option 1
@@ -32,6 +33,7 @@ const Radio = () => {
                         name="react-tips"
                         value="option2"
                         checked={option === 'option2'}
+                        onChange={handleOptionChange}
                         className="form-check-input"
                     />
                     Option 2
@@ -44,6 +46,7 @@ const Radio = () => {
                         name="react-tips"
                         value="option3"
                         checked={option === 'option3'}
+                        onChange={handleOptionChange}
                         className="form-check-input"
                     />
                     Option 3
