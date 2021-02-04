@@ -11,6 +11,7 @@ npm install react-time-picker
 
 Second Time Picker
 npm install @material-ui/core
+npm install @material-ui/icons
 
 npm install primereact --save
 npm install primeicons --save
