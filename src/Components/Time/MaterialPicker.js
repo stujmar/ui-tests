@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    display: 'flex',
+    display: 'block',
     flexWrap: 'wrap',
   },
   textField: {
@@ -21,7 +21,6 @@ export default function MaterialPicker() {
     <form className={classes.container} noValidate>
       <TextField
         id="time"
-        label="Alarm clock"
         type="time"
         defaultValue="07:30"
         className={classes.textField}
