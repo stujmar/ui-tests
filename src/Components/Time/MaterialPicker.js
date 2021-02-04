@@ -23,6 +23,7 @@ export default function MaterialPicker() {
         id="time"
         type="time"
         defaultValue="07:30"
+        onChange={(e) => console.log(e.target.value)}
         className={classes.textField}
         InputLabelProps={{
           shrink: true,
