@@ -11,6 +11,7 @@ import Color from '../Color/Color';
 import TextEdit from '../TextEdit/TextEdit';
 import Time from '../Time/Time';
 import Date from '../Date/Date';
+import Footer from '../Footer/Footer';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/time" component={Time}/>
           </Switch>  
         </div>
+        <Footer />
       </Router>
     </div>
   )

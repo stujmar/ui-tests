@@ -1,0 +1,8 @@
+.footBody {
+    position: sticky;
+    bottom: 0;
+    height: 50px;
+    margin-top: -50px;
+    background: white;
+    text-align: center;
+}
