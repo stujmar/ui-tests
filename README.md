@@ -6,7 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 npm install react-router-dom
 
+First Time Picker
 npm install react-time-picker
+
+Second Time Picker
+npm install @material-ui/core
+
 npm install primereact --save
 npm install primeicons --save
 npm install quill --save
