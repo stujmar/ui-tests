@@ -6,3 +6,9 @@
 .head {
     font-weight: 500;
 }
+
+.source {
+    display: block;
+    margin-bottom: 1px;
+
+}
