@@ -4,8 +4,13 @@ import {Prompt} from 'react-router-dom';
 import { head, body, source } from '../Universal.module.css'
 import styles from './Calendar.module.css'
 
+//First Calendar Option (simple)
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
+//Second Calendar Option (multiday)
+import DayPicker, { DateUtils } from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
 
 const Calendar = () => {
     const [name, setName] = useState("");
