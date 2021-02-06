@@ -48,6 +48,9 @@ const Calendar = () => {
         </h2>
         <a className={source} href="https://www.npmjs.com/package/react-datepicker" target="_blank">react-datepicker</a><br/>
         <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
+
+        <a className={source} href=" https://react-day-picker.js.org/examples/selected-multiple/" target="_blank">react-day-picker</a><br/>
+       
         </div>
     )
 }
