@@ -12,7 +12,9 @@ const Search = () => {
     }
 
     useEffect(() => {
-        console.log(query, "from useEffect");
+        if (query) {
+            console.log(query, "from useEffect");
+        }
     }, [query])
 
     return (
