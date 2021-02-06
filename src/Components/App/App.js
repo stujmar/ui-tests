@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-import Home from '../Home/Home';
+import Home from '../Search/Search';
 import Calendar from '../Calendar/Calendar';
 import NavBar from '../NavBar/NavBar';
 import Radio from '../Radio/Radio';
@@ -21,7 +21,7 @@ const App = () => {
         <div className={flexBody}>
           <NavBar />
           <Switch>
-            <Route path="/" component={Home} exact/>
+            <Route path="/" component={Search} exact/>
             <Route path="/color" component={Color}/>
             <Route path="/calendar" component={Calendar}/>
             <Route path="/date" component={Date}/>

@@ -27,18 +27,18 @@ const Calendar = () => {
     //     };
     //   }
 
-    handleDayClick(day, { selected }) {
-        const { selectedDays } = selectedDays;
-        if (selected) {
-          const selectedIndex = selectedDays.findIndex(selectedDay =>
-            DateUtils.isSameDay(selectedDay, day)
-          );
-          selectedDays.splice(selectedIndex, 1);
-        } else {
-          selectedDays.push(day);
-        }
-        this.setState({ selectedDays });
-      };
+    // handleDayClick(day, { selected }) {
+    //     const { selectedDays } = selectedDays;
+    //     if (selected) {
+    //       const selectedIndex = selectedDays.findIndex(selectedDay =>
+    //         DateUtils.isSameDay(selectedDay, day)
+    //       );
+    //       selectedDays.splice(selectedIndex, 1);
+    //     } else {
+    //       selectedDays.push(day);
+    //     }
+    //     this.setState({ selectedDays });
+    //   };
 
 
     return (

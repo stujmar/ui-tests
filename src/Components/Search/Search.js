@@ -1,8 +1,8 @@
 import React from "react"
 import { head, body } from '../Universal.module.css'
-import styles from './Home.module.css'
+import styles from './Search.module.css'
 
-const Home = () => {
+const Search = () => {
 
     return (
         <div className={body}>
@@ -11,4 +11,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Search
