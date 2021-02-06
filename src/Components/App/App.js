@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-import Home from '../Search/Search';
+import Search from '../Search/Search';
 import Calendar from '../Calendar/Calendar';
 import NavBar from '../NavBar/NavBar';
 import Radio from '../Radio/Radio';
