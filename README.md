@@ -6,10 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 npm install react-router-dom
 
-First Time Picker
+### Calendar picker
+npm install react-datepicker --save
+
+### First Time Picker
 npm install react-time-picker
 
-Second Time Picker
+### Second Time Picker
 npm install @material-ui/core
 npm install @material-ui/icons
 
