@@ -14,7 +14,32 @@ import 'react-day-picker/lib/style.css';
 
 const Calendar = () => {
     const [name, setName] = useState("");
+    //First Cal State
     const [startDate, setStartDate] = useState(new Date());
+    //Second Cal State
+    const [selectedDays, setSelectedDays] = useState([]);
+
+    // constructor(props) {
+    //     super(props);
+    //     this.handleDayClick = this.handleDayClick.bind(this);
+    //     this.state = {
+    //       selectedDays: [],
+    //     };
+    //   }
+
+    handleDayClick(day, { selected }) {
+        const { selectedDays } = selectedDays;
+        if (selected) {
+          const selectedIndex = selectedDays.findIndex(selectedDay =>
+            DateUtils.isSameDay(selectedDay, day)
+          );
+          selectedDays.splice(selectedIndex, 1);
+        } else {
+          selectedDays.push(day);
+        }
+        this.setState({ selectedDays });
+      };
+
 
     return (
         <div className={body}>
