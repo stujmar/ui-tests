@@ -6,11 +6,14 @@ const Search = () => {
 
     const [query, setQuery] = useState("");
 
+    const handleChange = (e) => {
+        console.log(e.target.value);
+    }
 
     return (
         <div className={body}>
             <h2 className={head}>Search</h2>
-            <input></input>
+            <input onChange={handleChange}></input>
         </div>
     )
 }
