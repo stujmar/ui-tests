@@ -9,6 +9,9 @@ npm install react-router-dom
 ### Calendar picker
 npm install react-datepicker --save
 
+### Calendar Picker (Option Two)
+npm install react-day-picker --save
+
 ### First Time Picker
 npm install react-time-picker
 
