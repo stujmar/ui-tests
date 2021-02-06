@@ -13,7 +13,10 @@ const Search = () => {
     return (
         <div className={body}>
             <h2 className={head}>Search</h2>
-            <input onChange={handleChange}></input>
+            <form>
+                <label htmlFor="symbol">Type any stock symbol. </label>
+                <input id="symbol" type="text" onChange={handleChange}></input>
+            </form>
         </div>
     )
 }
