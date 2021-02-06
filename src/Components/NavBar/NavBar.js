@@ -6,7 +6,7 @@ const NavBar = () => {
 
     return (
         <div className={navStyle}>
-            <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/" exact>Home</NavLink>
+            <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/" exact>Search</NavLink>
             <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/calendar">Calendar</NavLink>
             <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/color">Color</NavLink>
             <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/date">Date</NavLink>
