@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Modules Used
-
 npm install react-router-dom
+npm install axios
 
 ### Calendar picker
 npm install react-datepicker --save
