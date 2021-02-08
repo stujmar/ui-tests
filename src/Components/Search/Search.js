@@ -37,6 +37,9 @@ const Search = () => {
         }
     },[data]);
 
+    const addToWaitlist = () => {
+
+    };
 
     return (
         <div className={body}>
