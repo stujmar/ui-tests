@@ -1,6 +1,6 @@
 import React from "react"
-import { head, body, leftSection, rightSection } from './StockResult.module.css'
-import styles from './StockResult.module.css'
+import { body, leftSection, rightSection } from './StockResult.module.css'
+// import styles from './StockResult.module.css'
 
 const StockResult = ({data}) => {
     return (

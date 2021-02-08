@@ -7,7 +7,7 @@ import TimePicker from 'react-time-picker'
 // style imports
 import { head, body, source} from '../Universal.module.css'
 import MaterialPicker from "./MaterialPicker";
-import styles from './Time.module.css'
+// import styles from './Time.module.css'
 
 const Time = () => {
     const [value, onChange] = useState('00:00')

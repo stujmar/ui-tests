@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from 'axios';
 import { head, body } from '../Universal.module.css'
-import styles from './Search.module.css'
+// import styles from './Search.module.css'
 import StockResult from './StockResult'
 
 const Search = () => {
@@ -21,13 +21,14 @@ const Search = () => {
               const stonks = res.data;
               console.log(stonks.tickers);
               setData(stonks.tickers);
+              
             })
         }
     }, [query])
 
     useEffect(() => {
         if (data) {
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         divArray = data.map((item) => {
                 return <StockResult data={item} />
             })

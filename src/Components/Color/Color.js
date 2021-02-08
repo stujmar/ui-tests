@@ -1,6 +1,6 @@
 import React from "react"
 import { head, body } from '../Universal.module.css'
-import styles from './Color.module.css'
+// import styles from './Color.module.css'
 
 const Color = () => {
     return (

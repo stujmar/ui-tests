@@ -1,23 +1,22 @@
 import React, {useState} from 'react';
 //Look into this Prompt component later
-import {Prompt} from 'react-router-dom';
 import { head, body, source } from '../Universal.module.css'
-import styles from './Calendar.module.css'
+// import styles from './Calendar.module.css'
 
 //First Calendar Option (simple)
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 //Second Calendar Option (multiday)
-import DayPicker, { DateUtils } from 'react-day-picker';
+// import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 
 const Calendar = () => {
-    const [name, setName] = useState("");
+    // const [name, setName] = useState("");
     //First Cal State
     const [startDate, setStartDate] = useState(new Date());
     //Second Cal State
-    const [selectedDays, setSelectedDays] = useState([]);
+    // const [selectedDays, setSelectedDays] = useState([]);
 
     // constructor(props) {
     //     super(props);
@@ -46,7 +45,7 @@ const Calendar = () => {
         <h2 className={head}>
             Calendar
         </h2>
-        <a className={source} href="https://www.npmjs.com/package/react-datepicker" target="_blank">react-datepicker</a><br/>
+        <a className={source} href="https://www.npmjs.com/package/react-datepicker" target="_blank" rel="noreferrer">react-datepicker</a><br/>
         <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
 
         <a className={source} href=" https://react-day-picker.js.org/examples/selected-multiple/" target="_blank">react-day-picker</a><br/>
