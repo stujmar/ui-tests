@@ -10,13 +10,13 @@ const Search = () => {
     const [data, setData] = useState();
     const [results, setResults] = useState([]);
     const [watchList, setWatchList] = useState([]);
+    const [display, setDisplay] = useState([])
  
     const handleChange = (e) => {
         setQuery(e.target.value);
     }
 
     const addToWaitlist = (data) => {
-        console.log(watchList);
         setWatchList([...watchList, data]);
     };
 
@@ -40,6 +40,16 @@ const Search = () => {
             setResults(divArray);
         }
     },[data]);
+
+    useEffect(() => {
+        if (watchList) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        let saved = watchList.map((item) => {
+                return <div>{item.ticker}</div>
+            })
+        setDisplay([...display, saved]);   
+        }
+    },[watchList]);
 
     // useEffect(() => {
     //     if (data) {
@@ -65,7 +75,7 @@ const Search = () => {
             </form>
             <div className={flexBody}>
                 <div className={left} ><div>Results</div>{results}</div>
-                <div className={right}>Watchlist</div>
+                <div className={right}>Watchlist{display}</div>
             </div>
          
         </div>
