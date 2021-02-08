@@ -10,9 +10,14 @@ const Search = () => {
     const [data, setData] = useState();
     const [results, setResults] = useState([]);
     const [watchList, setWatchList] = useState([]);
+ 
     const handleChange = (e) => {
         setQuery(e.target.value);
     }
+
+    const addToWaitlist = (x) => {
+        console.log("added to waitlist", x)
+    };
 
     useEffect(() => {
         let url = "https://api.polygon.io/v2/reference/tickers?apiKey=5pIvRZ87rHbQoMwQTX5fERfYQYKBf9sU&search="
@@ -20,9 +25,7 @@ const Search = () => {
             axios.get(`${url}${query}`)
             .then(res => {
               const stonks = res.data;
-              console.log(stonks.tickers);
               setData(stonks.tickers);
-              
             })
         }
     }, [query])
@@ -31,15 +34,11 @@ const Search = () => {
         if (data) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         divArray = data.map((item) => {
-                return <StockResult data={item} />
+                return <StockResult data={item} onClick={addToWaitlist} />
             })
             setResults(divArray);
         }
     },[data]);
-
-    const addToWaitlist = () => {
-
-    };
 
     return (
         <div className={body}>
