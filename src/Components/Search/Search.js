@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import axios from 'axios';
 import { head, body } from '../Universal.module.css'
 import styles from './Search.module.css'
+import StockResult from './StockResult'
 
 const Search = () => {
     let divArray;
@@ -28,7 +29,7 @@ const Search = () => {
         if (data) {
 
         divArray = data.map((item) => {
-                return <div>{`${item.name}`}</div>
+                return <StockResult data={item} />
             })
             setResults(divArray);
         }
