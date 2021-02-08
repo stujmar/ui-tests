@@ -15,8 +15,9 @@ const Search = () => {
         setQuery(e.target.value);
     }
 
-    const addToWaitlist = (x) => {
-        console.log("added to waitlist", x)
+    const addToWaitlist = (data) => {
+        console.log(watchList);
+        setWatchList([...watchList, data]);
     };
 
     useEffect(() => {
@@ -40,6 +41,16 @@ const Search = () => {
         }
     },[data]);
 
+    // useEffect(() => {
+    //     if (data) {
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    //     divArray = data.map((item) => {
+    //             return <StockResult data={item} onClick={addToWaitlist} />
+    //         })
+    //         setResults(divArray);
+    //     }
+    // },[data]);
+
     return (
         <div className={body}>
             <h2 className={head}>Search</h2>
@@ -54,7 +65,7 @@ const Search = () => {
             </form>
             <div className={flexBody}>
                 <div className={left} ><div>Results</div>{results}</div>
-                <div className={right}>Watchlist{watchList}</div>
+                <div className={right}>Watchlist</div>
             </div>
          
         </div>
