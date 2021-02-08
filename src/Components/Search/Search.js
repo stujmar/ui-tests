@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from 'axios';
 import { head, body } from '../Universal.module.css'
-// import styles from './Search.module.css'
+import {flexBody, left, right} from './Search.module.css'
 import StockResult from './StockResult'
 
 const Search = () => {
@@ -49,7 +49,11 @@ const Search = () => {
                         onChange={handleChange}></input>
                  </label>
             </form>
-           {results}
+            <div className={flexBody}>
+                <div className={left} ><div>Results</div>{results}</div>
+                <div className={right}>Watchlist</div>
+            </div>
+         
         </div>
     )
 }
