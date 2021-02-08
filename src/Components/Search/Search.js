@@ -9,6 +9,7 @@ const Search = () => {
     const [query, setQuery] = useState('');
     const [data, setData] = useState();
     const [results, setResults] = useState([]);
+    const [watchList, setWatchList] = useState([]);
     const handleChange = (e) => {
         setQuery(e.target.value);
     }
@@ -51,7 +52,7 @@ const Search = () => {
             </form>
             <div className={flexBody}>
                 <div className={left} ><div>Results</div>{results}</div>
-                <div className={right}>Watchlist</div>
+                <div className={right}>Watchlist{watchList}</div>
             </div>
          
         </div>
