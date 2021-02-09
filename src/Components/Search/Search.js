@@ -21,12 +21,14 @@ const Search = () => {
     };
 
     useEffect(() => {
+        console.log("querying:", query);
         let url = "https://api.polygon.io/v2/reference/tickers?apiKey=5pIvRZ87rHbQoMwQTX5fERfYQYKBf9sU&search="
         if (query) {
             axios.get(`${url}${query}`)
             .then(res => {
               const stonks = res.data;
               setData(stonks.tickers);
+              console.log("query complete:", query);
             })
         }
     }, [query])
