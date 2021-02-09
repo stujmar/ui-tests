@@ -7,9 +7,13 @@ import StockResult from './StockResult'
 const Search = () => {
     let divArray;
     const [query, setQuery] = useState('');
+
     const [data, setData] = useState();
+
     const [results, setResults] = useState([]);
+
     const [watchList, setWatchList] = useState([]);
+    
     const [display, setDisplay] = useState([])
  
     const handleChange = (e) => {
@@ -17,6 +21,9 @@ const Search = () => {
     }
 
     const addToWaitlist = (data) => {
+        console.log("d", data);
+        console.log("W", watchList);
+        // console.log(watchList.filter(x => x === data));
         setWatchList([...watchList, data]);
     };
 
@@ -26,7 +33,7 @@ const Search = () => {
         if (query) {
             axios.get(`${url}${query}`)
             .then(res => {
-              const stonks = res.data;
+              const stonks = res.data;  
               setData(stonks.tickers);
               console.log("query complete:", query);
             })
