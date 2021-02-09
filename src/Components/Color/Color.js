@@ -9,7 +9,7 @@ const Color = () => {
             <h2 className={head}>
                 Color
             </h2>
-            
+            <ColorPicker value={color1} onChange={(e) => setColor1(e.value)} />
         </div>
     )
 }
