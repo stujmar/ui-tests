@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from 'axios';
 import { head, body } from '../Universal.module.css'
-import {flexBody, left, right} from './Search.module.css'
+import {flexBody, left, right, searchBar} from './Search.module.css'
 import StockResult from './StockResult'
 
 const Search = () => {
@@ -13,7 +13,7 @@ const Search = () => {
     const [results, setResults] = useState([]);
 
     const [watchList, setWatchList] = useState([]);
-    
+
     const [display, setDisplay] = useState([])
  
     const handleChange = (e) => {
@@ -72,8 +72,9 @@ const Search = () => {
 
     return (
         <div className={body}>
+            
             <h2 className={head}>Search</h2>
-            <form>
+            <form className={searchBar}>
                 <label htmlFor="symbol"><p>{'Type any stock symbol. '}</p>
                     <input 
                         id="symbol" 
