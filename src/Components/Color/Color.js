@@ -7,7 +7,7 @@ import {ColorPicker} from 'primereact/colorpicker';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
-// import 'primeflex/primeflex.css';
+import 'primeflex/primeflex.css';
 import '../../index.css';
 
 
@@ -25,7 +25,7 @@ const Color = () => {
             <h2 className={head}>
                 Color
             </h2>
-            <ColorPicker value={color} onChange={handlePickOne} />
+            <ColorPicker value={color} onChange={handlePickOne} /><br/>
             <ColorPicker format="rgb" value={color2} onChange={(e) => setColor2(e.value)} />
         </div>
     )
