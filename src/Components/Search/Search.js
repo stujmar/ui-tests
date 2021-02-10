@@ -61,6 +61,7 @@ const Search = () => {
             })
         setDisplay([...display, saved]);   
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[watchList]);
 
     // useEffect(() => {
