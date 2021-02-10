@@ -36,6 +36,8 @@ const Search = () => {
             .then(res => {
               const stonks = res.data;  
               setData(stonks.tickers);
+              // Watchlist getting clogged up with data some how trying to clear it here.
+              setWatchList([]);
               console.log("query complete:", query);
             })
         }
