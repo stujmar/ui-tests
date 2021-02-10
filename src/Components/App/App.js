@@ -10,7 +10,6 @@ import Header from '../Header/Header';
 import Color from '../Color/Color';
 import TextEdit from '../TextEdit/TextEdit';
 import Time from '../Time/Time';
-import Date from '../Date/Date';
 import Footer from '../Footer/Footer';
 
 const App = () => {
@@ -24,7 +23,6 @@ const App = () => {
             <Route path="/" component={Search} exact/>
             <Route path="/color" component={Color}/>
             <Route path="/calendar" component={Calendar}/>
-            <Route path="/date" component={Date}/>
             <Route path="/radio" component={Radio} />
             <Route path="/text" component={TextEdit}/>
             <Route path="/time" component={Time}/>
