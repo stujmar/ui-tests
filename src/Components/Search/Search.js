@@ -6,14 +6,15 @@ import StockResult from './StockResult'
 
 const Search = () => {
     let divArray;
+    // Active Search Term
     const [query, setQuery] = useState('');
-
+    // Where we put the data from the axios call.
     const [data, setData] = useState();
-
+    // data mapped to componenents to display search results.
     const [results, setResults] = useState([]);
-
+    // Objects from query what user clicked watchlist on.
     const [watchList, setWatchList] = useState([]);
-
+    // Components mapped from watclist data to display.
     const [display, setDisplay] = useState([])
  
     const handleChange = (e) => {
