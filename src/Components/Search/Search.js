@@ -64,16 +64,6 @@ const Search = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[watchList]);
 
-    // useEffect(() => {
-    //     if (data) {
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    //     divArray = data.map((item) => {
-    //             return <StockResult data={item} onClick={addToWaitlist} />
-    //         })
-    //         setResults(divArray);
-    //     }
-    // },[data]);
-
     return (
         <div className={body}>
             
