@@ -8,6 +8,7 @@ import Radio from '../Radio/Radio';
 import { main, flexBody } from './App.module.css';
 import Header from '../Header/Header';
 import Color from '../Color/Color';
+import NoMatch from '../NoMatch/NoMatch';
 import TextEdit from '../TextEdit/TextEdit';
 import Time from '../Time/Time';
 import Footer from '../Footer/Footer';
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/radio" component={Radio} />
             <Route path="/text" component={TextEdit}/>
             <Route path="/time" component={Time}/>
+            <Route component={NoMatch} exact/>
           </Switch>  
         </div>
         <Footer />
