@@ -25,6 +25,7 @@ const Color = () => {
             <h2 className={head}>
                 Color
             </h2>
+            <p>Prime React</p>
             <ColorPicker value={color} onChange={handlePickOne} /><br/>
             <ColorPicker format="rgb" value={color2} onChange={(e) => setColor2(e.value)} />
         </div>
