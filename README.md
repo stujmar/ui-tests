@@ -1,28 +1,37 @@
-# Getting Started with Create React App
+# UI Tests a React Project with UI Resources
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Live link
+[See it in action](https://smarsh-ui-tests.netlify.app/ "netlify live link")
+
 ## Modules Used
+---
+```bash
 npm install react-router-dom
 npm install axios
-
+```
 ### Calendar picker
+```bash
 npm install react-datepicker --save
-
+```
 ### Calendar Picker (Option Two)
+```bash
 npm install react-day-picker --save
-
+```
 ### First Time Picker
+```bash
 npm install react-time-picker
-
+```
 ### Second Time Picker
+```bash
 npm install @material-ui/core
 npm install @material-ui/icons
 
 npm install primereact --save
 npm install primeicons --save
 npm install quill --save
-
+```
 
 ## Available Scripts
 
