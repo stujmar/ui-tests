@@ -1,4 +1,4 @@
-![UI-TESTS](readme.png)
+![UI-TESTS](./readme.png)
 # UI Tests a React Project with UI Resources
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
