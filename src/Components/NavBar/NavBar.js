@@ -12,6 +12,7 @@ const NavBar = () => {
             <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/radio">Radio</NavLink>
             <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/text">Text</NavLink>
             <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/time">Time</NavLink>
+            <NavLink activeClassName={`${active} ${linkStyle}`} className={linkStyle} to="/svg">SVG Map</NavLink>
         </div>
     )
 }
