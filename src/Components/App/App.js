@@ -12,6 +12,7 @@ import NoMatch from '../NoMatch/NoMatch';
 import TextEdit from '../TextEdit/TextEdit';
 import Time from '../Time/Time';
 import Footer from '../Footer/Footer';
+import SvgMap from '../SvgMap/SvgMap';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/radio" component={Radio} />
             <Route path="/text" component={TextEdit}/>
             <Route path="/time" component={Time}/>
+            <Route path="/svg" component={SvgMap}/>
             <Route component={NoMatch} exact/>
           </Switch>  
         </div>
