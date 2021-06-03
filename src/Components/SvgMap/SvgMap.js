@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {data} from './profileData';
+import { wrapper } from './SvgMap.module.css';
 
 const SvgMap = () => {
     const [ employees, setEmployees ] = useState([]);
@@ -12,7 +13,7 @@ const SvgMap = () => {
         },[])
 
     return (
-        <div>
+        <div className={wrapper}>
             <h2>This is where the svg map will go</h2>
             {employees}
         </div>
