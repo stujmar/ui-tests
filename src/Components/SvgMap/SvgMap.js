@@ -7,7 +7,6 @@ const SvgMap = () => {
     const [ employees, setEmployees ] = useState([]);
 
     const deleteUser = (id) => {
-        console.log(id, employeeData)
         setEmployeeData(employeeData.filter(person => person.id !== id));
     }
 
