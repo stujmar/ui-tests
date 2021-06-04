@@ -1,3 +1,22 @@
 .wrapper {
-    padding: 10px 30px;
+  padding: 10px 30px;
+}
+
+.employee {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.employeeName {
+  text-align: left;
+}
+
+.employeeRemove {
+  border-radius: 5px;
+}
+
+.mapWrapper {
+  margin-top: 20px;
 }

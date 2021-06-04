@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {data} from './profileData';
-import { wrapper } from './SvgMap.module.css';
+
+import Map from './Map';
+import { wrapper, employee, employeeName, employeeRemove } from './SvgMap.module.css';
+
 
 const SvgMap = () => {
     const [ employeeData, setEmployeeData ] = useState([])
@@ -21,8 +24,9 @@ const SvgMap = () => {
     useEffect(() => {
         setEmployees(
                 employeeData.map((profile) => {
-                    return <div key={profile.id} id={profile.id}>{profile.name}
-                    <button onClick={() => {deleteUser(profile.id)}}>X</button>
+                    return <div key={profile.id} id={profile.id} className={employee}>
+                        <div className={employeeName}>{profile.name}</div>
+                    <button className={employeeRemove} onClick={() => {deleteUser(profile.id)}}>X</button>
                     </div>
                 })
             )
@@ -34,6 +38,7 @@ const SvgMap = () => {
             <h2>This is where the svg map will go</h2>
             <button type="button" onClick={reload}>RELOAD</button>
             {employees}
+            <Map />
         </div>
     )
 }
